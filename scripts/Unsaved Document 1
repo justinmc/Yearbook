@@ -1,0 +1,33 @@
+<?php
+
+function getdb ($row      $where)															// Accesses the news database
+{
+   $con = mysql_connect("db44.pair.com", "arcoiris_2", "r66irBhM");
+   if (!$con)
+   {
+      die('Could not connect: ' . mysql_error());
+   }
+   mysql_select_db("arcoiris_pages");
+   
+   if (($where == 'Photos') || ($where == 'anSpanish') || ($where == 'anEnglish'))
+      $db = $where;
+   else
+      $db = "news" . $where;
+   $QUERY = mysql_query("SELECT * FROM $db WHERE Number = '$row'");
+   $DATA = mysql_fetch_array($QUERY);
+
+   mysql_close($con);
+
+   return ($DATA);
+}
+
+
+
+
+
+
+
+
+
+
+?>

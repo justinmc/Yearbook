@@ -1,0 +1,217 @@
+a {cursor: pointer;}
+a:link {color: #f8a750; text-decoration: none;}
+a:visited {color: #f8a750; text-decoration: none;} 
+a:hover {color: #b7baaf; text-decoration: underline;} 
+a.bright:link {color: #ff8400; text-decoration: underline;}
+a.bright:visited {color: #ff8400; text-decoration: underline;}
+a.bright:hover {color: #b7baaf; text-decoration: none;} 
+
+body
+{ 
+background-color: #f3f3f3;
+font-size: 13pt;
+text-align: center;
+height: 100%;
+padding-bottom: 100px;
+}
+
+p
+{
+text-indent: 40px;
+font-size: 12pt;
+}
+
+p.teamPR
+{
+text-align: left; 
+width: 370px; 
+position: absolute; 
+top: 420px; right: 0px;
+}
+
+p.teamPL
+{
+text-align: left; 
+width: 370px; 
+position: relative; left: 0px;
+}
+
+h1
+{
+color: #000000;
+text-decoration: none;
+font-size: 28pt;
+text-align: center;
+}
+
+h2
+{
+position: relative; top: 40px; left: 40px;
+text-decoration: none;
+font-size: 16pt;
+text-align: left;
+}
+
+h3
+{
+font-size: 13pt;
+text-align: left;
+}
+
+h4
+{
+color: #f8a750;
+text-decoration: underline;
+font-size: 16pt;
+text-align: left;
+}
+
+/* contains everything besides the background */
+.all
+{
+background: transparent;
+border: 0px gray solid;
+margin: 0 auto;
+height: auto; width: 800px;
+position: relative; top: 14px; left: 16px;
+overflow: hidden;
+}
+
+/* holds the title image */
+   .titlebar
+   {
+   background-image: url('images/title3.jpg');
+   border: 0px blue solid;
+   height: 234px; width: 100%;
+   position: relative; top: 0px; left: 0px;
+   }
+
+/* holds the horizontal navbar */
+   .navbar
+   {
+   text-align: center;
+   background: #2b2b2c;
+   border-left: 1px #5e5d55 solid;
+   border-right: 1px #5e5d55 solid;
+   height: 45px; width: 798px;
+   position: relative; top: -17px; left: 0px;
+   }
+   
+/* holds all main content of each page */
+   .content
+   {
+   background: #ffffff;
+   border-left: 1px #5e5d55 solid;
+   border-right: 1px #5e5d55 solid;
+   height: 100%; width: 778px;
+   position: relative; top: -17px; left: 0px;
+   padding: 10px;
+   }
+/* holds each individual comment */
+   .comment
+   {
+   background: url('images/paperBack.jpg');
+   height: auto; width: 681px;
+   position: relative; top: 0px; left: 0px;
+   text-align: left;
+   padding: 40px;
+   }
+/* fancy ripped paper top for each comment */
+      .commentTop
+      {
+      background: url('images/paperTop.jpg');
+      height: 79px; width: 750px;
+      position: absolute; top: 0px; left: 2px;
+      }
+/* fancy ripped paper bottom for each comment */
+      .commentBot
+      {
+      background: url('images/paperBot.jpg');
+      height: 79px; width: 750px;
+      position: absolute; bottom: 0px; left: 12px;
+      }
+/* some sort of decoration at the bottom of the main div, before the footer */
+   .bottombar
+   {
+   color: #ffffff;
+   background: #2b2b2c;
+   border-left: 1px #5e5d55 solid;
+   border-right: 1px #5e5d55 solid;
+   height: 45px; width: 100%;
+   position: relative; bottom: 33px; left: 0px;
+   }
+/* holds the footer text */
+   .footer
+   {
+   background: #f3f3f3;
+   height: 100px; width: 100%;
+   position: relative; bottom: -20px; left: 0px;
+   }
+
+#picTable
+{
+	margin: 0 auto;
+text-align: center;
+}
+
+ul.nav li
+{
+display: inline;
+}
+
+ul.nav li.invis
+{
+background: transparent;
+float: left;
+width: 155px; height: 45px;
+}
+
+ul.nav li.home a
+{
+text-align: center;
+background: url('images/home_over.jpg');
+color: #FFFFFF;
+border-left: 0px transparent solid;
+float: left;
+width: 135px; height: 45px;
+}
+ul.nav li.home a:link, 
+ul.nav li.home a:visited {background: url('images/home.jpg');}
+ul.nav li.home a:hover,
+ul.nav li.home a:focus {background: url('images/home_over.jpg');}
+
+ul.nav li.teams a
+{
+text-align: center;
+background: url('images/teams_over.jpg');
+border-left: 0px transparent solid;
+float: left;
+width: 135px; height: 45px;
+}
+ul.nav li.teams a:link, 
+ul.nav li.teams a:visited {background: url('images/teams.jpg');}
+ul.nav li.teams a:hover,
+ul.nav li.teams a:focus {background: url('images/teams_over.jpg');}
+
+ul.nav li.events a
+{
+text-align: center;
+background: url('images/events_over.jpg');
+color: #FFFFFF;
+border-left: 0px transparent solid;
+float: left;
+width: 135px; height: 45px;
+}
+ul.nav li.events a:link, 
+ul.nav li.events a:visited {background: url('images/events.jpg');}
+ul.nav li.events a:hover,
+ul.nav li.events a:focus {background: url('images/events_over.jpg');}
+
+table.events
+{
+text-align: left; 
+margin: 0 auto;
+font-size: 15pt;
+}
+table.events td:hover {background: #eaecfb;}
+
